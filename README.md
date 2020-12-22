@@ -25,9 +25,9 @@ The following scripts for plotting figures displaying performance metrics in the
 4. bar_with_error.m for creating grouped bar graphs overlayed by error bars
 
 ## Description of provided data
-Predictions used in the example are obtained from a random forest.
-The predictions are stored in prediction_chb23_XX.csv in the folder named random-forest_result where XX is the record number.
+Predictions used in the example are obtained from all classifiers used in the manuscript.
+The predictions are stored in prediction_XX_YY.csv in the folder of which the name ends with _result where XX and YY are case of patient and the record number.
 In the prediction file, each row indicates a prediction at each time step of each record where the record name is indicated by the first row. The record name that is the same as the file name is the test record, and the other records are for training.
 
-The label of the provided case is stored in annot_chb23.csv where each row corresponds to predictions of an EEG record sorted by number and alphabet. For example, predictions of the record chb23_06 are stored in the first row, and predictions of the record chb23_10 are stored in the fifth row. The column A in the file indicates lengths of EEG, the columns B to G consist of annotated seizure onsets, and the columns H to M contain labelled seizure offsets.
+All onset and offset labels are stored in the folder chb-mit_onsetoffset_label, and each file name ends with the patient case. In the file, each row corresponds to predictions of an EEG record sorted by number and alphabet. For example, predictions of the record chb23_06 are stored in the first row, and predictions of the record chb23_10 are stored in the fifth row. The column A in the file indicates lengths of EEG, the columns B to G consist of annotated seizure onsets, and the columns H to M contain labelled seizure offsets.
 
